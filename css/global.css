@@ -1,0 +1,88 @@
+
+body{
+    font-family: "Fire sans", arial, sans-serif ;
+margin: 0px;
+color: black;
+}
+
+
+h1,h2,h3,p { margin: 0px;}
+
+
+ul{
+    margin: 0px;
+    padding: 0px;
+list-style: none;
+}
+
+
+img{
+    max-width: 100%;
+    display: block ;
+   height: auto;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+    margin: 0 6rem 0 0;
+    }
+    .introduçao h1{
+        font-size: calc(24rem/16);
+       
+       
+       }
+       .introduçao::before{
+           content: "";
+           display: block;
+       background-image: url(perfil.jpg);
+       width: 100px;
+       height: 50px;
+       position: absolute;
+       z-index: -1;
+       top:
+       -15;
+       left: -40;
+       }
+       
+header{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 40px 20px;
+}
+
+
+.menu{
+    display: flex;
+    gap: 1rem;
+}
+.subtitulo{
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 4ch;
+}
+@media (max-width: 800px) {
+    .subtitulo {
+      font-size: 3rem;
+      text-transform: capitalize;
+      max-width: initial !important;
+    }
+    .experiencia .subtitulo {
+      color: #000000;
+    }
+    .experiencia-texto {
+      font-size: 1.25rem;
+    }
+    .empresa-ano {
+      position: initial;
+    }
+  }
